@@ -1,86 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my cv</title>
-    <link href="CSS/style.css" rel="stylesheet" type="text/css">
-
-</head>
-<body>
-    <section class="info">
-    <h1>Información General</h1>
-    <ul> 
-        <li>Valentina Valdés</li>
-        <li>Santiago, Chile.</li> 
-        <li>+ 56 9 48779545</li> 
-        <li>vacovare@gmail.com</li> 
-        <li> <a href="https://github.com/ValeValdes">Perfil en GitHub</a> </li> 
-    </ul>
-</section>
-<section class="info">
-    <h2>Experiencia</h2>
-<li> 08/2025 - 01/2027 <br/> Desarrolladora BackEnd Web, Ripley, Chile </li> <br/>
-<li> 12/2023 - 08/2025 <br/> Desarrolladora Java Junior, Walmart, Chile </li> <br/>
-<li> 04/2023 - 12/2023 <br/> Trainee, Justo, Chile </li> </br>    
-    </ul>
-</section>
-<section class="info">
-    <h2>Habilidades</h2>
-    <table>
-        <tr>
-          <th>Tecnología</th>
-        </tr>
-        <tr>
-          <td>Javascript</td>
-          <td>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div>
+          <img src="pfp-cv-vale/pfp-temp.jpg" />
+        </div>
+        <div>
+          <section class="contact-info">
+            <h1>Valentina Valdés Retamal</h1>
+            <ul class="lista-contacto">
+              <li>
+                <span class="icon"> <i class="fi fi-rr-envelope"></i></span>
+                <span>vacovare@gmail.com</span>
+              </li>
+              <li>
+                <span class="icon"> <i class="fi fi-brands-linkedin"></i></span>
+                <span>
+                  <a
+                    href="https://cl.linkedin.com/in/valentina-vald%C3%A9s-retamal-693406225"
+                    >Perfil en LinkedIn
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span class="icon"><i class="fi fi-brands-github"></i></span>
+                <span>
+                  <a href="https://github.com/ValeValdes">Perfil en GitHub</a>
+                </span>
+              </li>
+              <li></li>
+              <li>
+                <span class="icon"> <i class="fi fi-rr-marker"></i></span>
+                <span>Santiago, Chile.</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div>
+          <section class="info">
+            <h2 class="header2-left">Intereses</h2>
+            <ul class="lista-intereses">
+              <li>Blockchain</li>
+              <li>Realidad aumentada</li>
+              <li>Machine Learning</li>
+            </ul>
+          </section>
+        </div>
+        <div>
+          <section class="info">
+            <h2 class="header2-left">Hobbies</h2>
+            <div class="icon-container">
+              <span class="icon-hobby">
+                <i class="fi fi-ss-basketball"></i
+              ></span>
+              <span class="icon-hobby"> <i class="fi fi-rr-mug-tea"></i></span>
+              <span class="icon-hobby"> <i class="fi fi-rr-dice-d20"></i></span>
+              <span class="icon-hobby"> <i class="fi fi-rr-gamepad"></i></span>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="right-side">
+        <div>
+          <section class="info">
+            <h2>Experiencia</h2>
             <ul>
-              <li>Sólida comprensión de la programación orientada a objetos.</li>
-              <li>Familiarizada con varios diseños y patrones arquitectónicos.</li> 
-              <li>Habilidad para escribir bibliotecas en lenguaje Java reutilizables.</li> 
-          </ul>
-        </td>
-        </tr>
-        <tr>
-          <td>React</td>
-          <td><ul>
-            <li>Profundo conocimiento de HTML, CSS, SASS/LESS/Stylus.</li>
-            <li>Buena experiencia en la gestión de plataformas en la nube; SaaS, Amazon AWS, Google Cloud y Microsoft Azure.</li> 
-            <li>Typescript y Flow.</li> 
-        </ul></td>
-        </tr>
-        <tr>
-            <td>Firebase</td>
-            <td><ul>
-              <li>Experiencia práctica con Firebase.</li>
-              <li>Experiencia con los servicios de Firebase como Cloud Messaging, Cloud Functions, Realtime Database, Cloud Firestore y Authentication.</li> 
-              <li>Conocimiento de API REST y librerías de terceros.</li> 
-          </ul></td>
-          </tr>
-      </table>
-    </section>
-<section class="info">
-      <h2>Intereses</h2>
-      <table id="tabla intereses">
-          <tr>
-            <td class="needs padding">Blockchain</td>
-            <td class="needs padding">El Blockchain consiste en una base de datos distribuida, formada por cadenas de bloques que han sido diseñadas para evitar su modificación una vez que un dato ha sido publicado.</td>
-          </tr>
-          <tr>
-            <td class="needs padding">Realidad aumentada</td>
-            <td class="needs padding">La realidad aumentada es una tecnología que permite combinar elementos del mundo real con elementos virtuales, que sirven para aportar información adicional a los primeros, enriqueciendo la experiencia visual y mejorando el canal de comunicación.</td>
-          </tr>
-          <tr>
-              <td class="needs padding">Machine Learning</td>
-              <td class="needs padding">El Machine Learning es una disciplina del campo de la Inteligencia Artificial que, a través de algoritmos, dota a los computadores de la capacidad de identificar patrones en datos masivos y elaborar predicciones.</td>
-            </tr>
-        </table> </section>
-        <br/>
-        <aside class="inputs para contactar">
-        <input type="text" id="input correo" name="input correo" placeholder="Escribe tu e-mail aquí"> <br/>
-        <textarea name="textarea" rows="10" cols="100">Escribe tu mensaje aquí</textarea> <br/>
-        <button id="botón contacto" type="button"> Contactar</button>
-        </aside>
-</body>
+              <li>
+                08/2026 - Presente<br />
+                Desarrolladora BackEnd Web, Ripley, Chile.
+              </li>
+              <li>
+                12/2024 - 08/2026 <br />
+                Desarrolladora Java Junior, Walmart, Chile.
+              </li>
+              <li>
+                04/2024 - 12/2024 <br />
+                Trainee, Justo, Chile.
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div>
+          <section class="info">
+            <h2>Formación</h2>
+            <ul>
+              <li>
+                02/2023 - 10/2027 <br />
+                Ingeniería en Biotecnología Molecular, Universidad de Chile,
+                Santiago.
+              </li>
+              <li>
+                2010 - 11/2021 <br />
+                The English Institute, Santiago.
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div>
+          <section class="info">
+            <h2>Habilidades</h2>
+            <table>
+              <tr>
+                <td>Javascript</td>
+                <td>
+                  <ul>
+                    <li>
+                      Sólida comprensión de la programación orientada a objetos.
+                    </li>
+                    <li>
+                      Familiarizada con varios diseños y patrones
+                      arquitectónicos.
+                    </li>
+                    <li>Habilidad para escribir bibliotecas reutilizables.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>React</td>
+                <td>
+                  <ul>
+                    <li>
+                      Profundo conocimiento de HTML, CSS, SASS/LESS/Stylus.
+                    </li>
+                    <li>
+                      Buena experiencia en la gestión de plataformas en la nube;
+                      SaaS, Amazon AWS, Google Cloud y Microsoft Azure.
+                    </li>
+                    <li>Typescript y Flow.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Firebase</td>
+                <td>
+                  <ul>
+                    <li>Experiencia práctica con Firebase.</li>
+                    <li>
+                      Experiencia con los servicios de Firebase como Cloud
+                      Messaging, Cloud Functions, Realtime Database, Cloud
+                      Firestore y Authentication.
+                    </li>
+                    <li>Conocimiento de API REST y librerías de terceros.</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
+        </div>
+        <section class="info">
+          <div class="prof-experience">
+            <h2>Idiomas</h2>
+            <ul class="lista-idiomas">
+              <li>
+                <span class="exp-text">Español Nativo</span>
+                <span class="percent">
+                  <div style="width: 100%"></div>
+                </span>
+              </li>
+              <li>
+                <span class="exp-text">Inglés C2</span>
+                <span class="percent">
+                  <div style="width: 100%"></div>
+                </span>
+              </li>
+              <li>
+                <span class="exp-text">Francés</span>
+                <span class="percent">
+                  <div style="width: 40%"></div>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>

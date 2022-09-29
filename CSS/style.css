@@ -1,21 +1,118 @@
 * {
-  margin-left: 15px;
-  margin-right: 15px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Gill Sans", "Oxygen", "Times New Roman", Times, sans-serif;
 }
-html {
+body {
   background-color: #daedff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 .info {
   width: viewport-lenght;
   background-color: #f8defbe9;
-  padding: 0 20px 20px 20px;
-  border: 5px solid rgba(142, 142, 142, 0.514);
+  padding: 12px;
+  border: 1px solid rgb(255, 0, 255);
 }
-td,
-th {
-  padding: 7px;
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100px;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
-input {
-  margin-bottom: 4px;
+
+.left-side {
+  position: relative;
+  background-image: linear-gradient(
+    white 25%,
+    rgb(143, 160, 255),
+    rgb(208, 0, 255) 80%
+  );
+  padding: 20px;
+}
+h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.header2-left {
+  margin: 5px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.lista-contacto {
+  padding: 0;
+  list-style-type: none;
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.icon {
+  margin: 5px;
+}
+.icon :before {
+  font-size: 18px;
+}
+
+.icon-hobby {
+  padding: 0px;
+
+  background-size: 30px 19px;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.icon-hobby :before {
+  font-size: 25px;
+}
+
+.lista-intereses {
+  padding-left: 14px;
+  margin: 0px;
+}
+
+.right-side {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+h2 {
+  font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.lista-idiomas {
+  padding: 0;
+  list-style-type: none;
+}
+
+.prof-experience .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: rgb(219, 183, 216);
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.prof-experience .percent div {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  background-color: rgb(165, 42, 159);
+  display: inline-block;
 }
